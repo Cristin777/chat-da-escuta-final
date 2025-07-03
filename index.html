@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chat da Escuta IA</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1599844862874-6df14a03f493');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding-top: 60px;
+    }
+    h1 {
+      font-size: 2.5em;
+      text-shadow: 2px 2px 4px #000000;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.1em;
+      text-align: center;
+      max-width: 700px;
+      margin-bottom: 30px;
+      text-shadow: 1px 1px 2px #000000;
+    }
+    .ia-button {
+      background-color: #ffcc00;
+      border: none;
+      padding: 10px 20px;
+      margin: 8px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      color: black;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+      transition: transform 0.2s ease;
+    }
+    .ia-button:hover {
+      background-color: #ffd700;
+      transform: scale(1.05);
+    }
+    .paypal {
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Chat da Escuta IA</h1>
+  <p>Uma companhia disponível 24h com escuta emocional e guardiãs especializadas para as dores da alma. Acolhimento, orientação e presença — quando você mais precisa.</p>
+
+  <div>
+    <a class="ia-button" href="https://chatgpt.com/g/g-6856e1c421408911948bac5e4ad2b7f0-alma-serena-guardia-do-cuidado-interior" target="_blank">Alma Serena</a>
+    <a class="ia-button" href="https://chatgpt.com/g/g-8e4e55c16ff44405a36ec70b1c9995b8-alma-presente-guardia-da-escuta-real" target="_blank">Alma Presente</a>
+    <a class="ia-button" href="https://chatgpt.com/g/g-d7b1f9a3aa67410a9635b3de4ef3568d-alma-leve-guardia-da-ansiedade" target="_blank">Alma Leve</a>
+    <a class="ia-button" href="https://chatgpt.com/g/g-358e4fdd243a466581d658f2ce9c1af3-alma-firme-guardia-da-decisao-consciente" target="_blank">Alma Firme</a>
+    <a class="ia-button" href="https://chatgpt.com/g/g-219369f707c445f29bb578173b7a37e6-alma-digna-guardia-do-valor-interior" target="_blank">Alma Digna</a>
+    <a class="ia-button" href="https://chatgpt.com/g/g-6eddb50e4b994028a7dcf81d9cb4ff9c-alma-raiz-guardia-das-dores-silenciosas" target="_blank">Alma Raiz</a>
+    <a class="ia-button" href="https://chatgpt.com/g/g-73d27206739e4b63a3dc04688e0cb35d-alma-aurora-guardia-do-recomeco-interior" target="_blank">Alma Aurora</a>
+  </div>
+
+  <div class="paypal">
+    <div id="paypal-button-container"></div>
+  </div>
+
+  <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=BRL"></script>
+  <script>
+    paypal.Buttons().render('#paypal-button-container');
+  </script>
+</body>
+</html>
