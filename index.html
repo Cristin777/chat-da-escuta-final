@@ -8,36 +8,29 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-image: url('https://i.ibb.co/s9YVv8xj/forca.png');
-      background-size: cover;
-      background-position: center;
+      background-color: #000;
       color: #ffffff;
       text-shadow: 1px 1px 4px #000000;
     }
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.6);
-      min-height: 100vh;
+    .hero {
+      width: 100%;
+      height: 100vh;
+      background: url('https://i.ibb.co/s9YVv8xj/forca.png') no-repeat center center;
+      background-size: cover;
+    }
+    .content {
+      background-color: rgba(0, 0, 0, 0.85);
       padding: 40px 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: flex-start;
-    }
-    h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 1.3em;
-      max-width: 700px;
-      text-align: center;
-      margin-bottom: 40px;
     }
     .button-grid {
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
       justify-content: center;
+      margin-bottom: 40px;
     }
     .ia-button {
       background-color: rgba(255, 255, 255, 0.9);
@@ -56,15 +49,13 @@
       transform: scale(1.05);
     }
     .paypal {
-      margin-top: 50px;
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
-  <div class="overlay">
-    <h1>Chat da Escuta IA</h1>
-    <p>Uma companhia disponível 24h com escuta emocional e guardiãs especializadas para as dores da alma. Acolhimento, orientação e presença — quando você mais precisa.</p>
-
+  <div class="hero"></div>
+  <div class="content">
     <div class="button-grid">
       <a class="ia-button" href="https://chatgpt.com/g/g-6865ec1426488191a4bac5cad42bf9f0-alma-serena-guardia-do-cuidado-interior" target="_blank">Alma Serena</a>
       <a class="ia-button" href="https://chatgpt.com/g/g-6866134c8bb8819195197e2e1e416c6d-alma-presente-guardia-da-presenca-emocional" target="_blank">Alma Presente</a>
@@ -74,7 +65,6 @@
       <a class="ia-button" href="https://chatgpt.com/g/g-6865f19e88f48191a81c5d4ab1b623b5-alma-raiz-guardia-da-dor-silenciosa" target="_blank">Alma Raiz</a>
       <a class="ia-button" href="https://chatgpt.com/g/g-6865efa1cc6481918dc21b6eeef5f237-alma-aurora-guardia-do-recomeco-interior" target="_blank">Alma Aurora</a>
     </div>
-
     <div class="paypal">
       <div id="paypal-container-UUDGS5Q8QAMBW"></div>
       <script src="https://www.paypal.com/sdk/js?client-id=BAAaVkUxaVBs6tRyAIsC5SzH1jhrwK-GialFVALkLGvy6BVhXUENAbFKPsHsU23Sj2bs_PxNIzZ5IzAYCw&components=hosted-buttons&disable-funding=venmo&currency=BRL"></script>
