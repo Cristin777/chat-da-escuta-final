@@ -8,10 +8,9 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-image: url('https://cdn.pixabay.com/photo/2021/12/05/01/44/angel-6846623_1280.jpg');
+      background-image: url('https://i.ibb.co/s9YVv8xj/forca.png');
       background-size: cover;
       background-position: center;
-      background-repeat: no-repeat;
       color: #ffffff;
       text-shadow: 1px 1px 4px #000000;
     }
@@ -58,17 +57,13 @@
     }
     .paypal {
       margin-top: 50px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 24px;
     }
   </style>
 </head>
 <body>
   <div class="overlay">
     <h1>Chat da Escuta IA</h1>
-    <p>Guardiãs especializadas em escuta emocional, 24 horas por dia. Aqui você encontra acolhimento, escuta e companhia nos momentos mais difíceis da alma.</p>
+    <p>Uma companhia disponível 24h com escuta emocional e guardiãs especializadas para as dores da alma. Acolhimento, orientação e presença — quando você mais precisa.</p>
 
     <div class="button-grid">
       <a class="ia-button" href="https://chatgpt.com/g/g-6865ec1426488191a4bac5cad42bf9f0-alma-serena-guardia-do-cuidado-interior" target="_blank">Alma Serena</a>
@@ -81,15 +76,14 @@
     </div>
 
     <div class="paypal">
-      <div id="paypal-container-AA2DMVSGW5UYW"></div>
       <div id="paypal-container-UUDGS5Q8QAMBW"></div>
+      <script src="https://www.paypal.com/sdk/js?client-id=BAAaVkUxaVBs6tRyAIsC5SzH1jhrwK-GialFVALkLGvy6BVhXUENAbFKPsHsU23Sj2bs_PxNIzZ5IzAYCw&components=hosted-buttons&disable-funding=venmo&currency=BRL"></script>
+      <script>
+        paypal.HostedButtons({
+          hostedButtonId: "UUDGS5Q8QAMBW",
+        }).render("#paypal-container-UUDGS5Q8QAMBW")
+      </script>
     </div>
-
-    <script src="https://www.paypal.com/sdk/js?client-id=BAAaVkUxaVBs6tRyAIsC5SzH1jhrwK-GialFVALkLGvy6BVhXUENAbFKPsHsU23Sj2bs_PxNIzZ5IzAYCw&components=hosted-buttons&disable-funding=venmo&currency=BRL"></script>
-    <script>
-      paypal.HostedButtons({ hostedButtonId: "AA2DMVSGW5UYW" }).render("#paypal-container-AA2DMVSGW5UYW")
-      paypal.HostedButtons({ hostedButtonId: "UUDGS5Q8QAMBW" }).render("#paypal-container-UUDGS5Q8QAMBW")
-    </script>
   </div>
 </body>
 </html>
