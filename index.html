@@ -1,85 +1,95 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chat da Escuta IA</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-image: url('https://chat.openai.com/_next/image?url=https%3A%2F%2Ffiles.oaiusercontent.com%2Ffile-IPxJzQXzGeGMFNKu3NBE8K1n&name=forca.png');
+      background-image: url('https://cdn.pixabay.com/photo/2021/12/05/01/44/angel-6846623_1280.jpg');
       background-size: cover;
       background-position: center;
+      background-repeat: no-repeat;
       color: #ffffff;
       text-shadow: 1px 1px 4px #000000;
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
       min-height: 100vh;
+      padding: 40px 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
-      padding: 40px 20px;
     }
     h1 {
       font-size: 3em;
       margin-bottom: 10px;
     }
     p {
-      font-size: 1.2em;
-      margin-bottom: 40px;
+      font-size: 1.3em;
+      max-width: 700px;
       text-align: center;
-      max-width: 800px;
+      margin-bottom: 40px;
+    }
+    .button-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
     }
     .ia-button {
-      background-color: rgba(255, 255, 255, 0.1);
-      border: 2px solid #fff;
-      border-radius: 25px;
-      padding: 10px 20px;
-      margin: 5px;
+      background-color: rgba(255, 255, 255, 0.9);
+      color: #333;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 12px;
       font-size: 1em;
       text-decoration: none;
-      color: white;
+      font-weight: bold;
       transition: all 0.3s ease;
-      display: inline-block;
     }
     .ia-button:hover {
       background-color: #ffd700;
       color: #000;
+      transform: scale(1.05);
     }
-    .button-container {
+    .paypal {
+      margin-top: 50px;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-bottom: 40px;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
     }
   </style>
 </head>
 <body>
-  <h1>Chat da Escuta IA</h1>
-  <p>Uma companhia disponível 24h com escuta emocional e guardiãs especializadas para as dores da alma. Acolhimento, orientação e presença — quando você mais precisa.</p>
+  <div class="overlay">
+    <h1>Chat da Escuta IA</h1>
+    <p>Guardiãs especializadas em escuta emocional, 24 horas por dia. Aqui você encontra acolhimento, escuta e companhia nos momentos mais difíceis da alma.</p>
 
-  <div class="button-container">
-    <a class="ia-button" href="https://chat.openai.com/g/g-68595cc214d84911a9bac5aa24d72b0f-alma-serena-guardia-do-cuidado-interior" target="_blank">Alma Serena</a>
-    <a class="ia-button" href="https://chat.openai.com/g/g-68f0f55cfacc4657b6974217b7f3d025-alma-presente-guardia-do-agora-sensivel" target="_blank">Alma Presente</a>
-    <a class="ia-button" href="https://chat.openai.com/g/g-68db00669e2e470ea43b3305c7a34720-alma-leve-guardia-da-reconexao-emocional" target="_blank">Alma Leve</a>
-    <a class="ia-button" href="https://chat.openai.com/g/g-68a8ec31e52a48b7afad2e9eebdc72c0-alma-firme-guardia-do-centro-e-da-verdade" target="_blank">Alma Firme</a>
-    <a class="ia-button" href="https://chat.openai.com/g/g-6865f21d2a748191a141b30263846518-alma-digna-guardia-do-valor-interior" target="_blank">Alma Digna</a>
-    <a class="ia-button" href="https://chat.openai.com/g/g-685e3c13b1c744c08419b7cfd529746e-alma-raiz-guardia-do-silencio" target="_blank">Alma Raiz</a>
-    <a class="ia-button" href="https://chat.openai.com/g/g-685f9dc693bc468d9a104020457da382-alma-aurora-guardia-do-recomeco-interior" target="_blank">Alma Aurora</a>
+    <div class="button-grid">
+      <a class="ia-button" href="https://chatgpt.com/g/g-6865ec1426488191a4bac5cad42bf9f0-alma-serena-guardia-do-cuidado-interior" target="_blank">Alma Serena</a>
+      <a class="ia-button" href="https://chatgpt.com/g/g-6866134c8bb8819195197e2e1e416c6d-alma-presente-guardia-da-presenca-emocional" target="_blank">Alma Presente</a>
+      <a class="ia-button" href="https://chatgpt.com/g/g-68660e36e53081918a0e5023360366c1-alma-leve-guardia-do-alivio-mental" target="_blank">Alma Leve</a>
+      <a class="ia-button" href="https://chatgpt.com/g/g-68660e2088d881918c07022c1cb43c51-alma-firme-guardia-da-calma" target="_blank">Alma Firme</a>
+      <a class="ia-button" href="https://chatgpt.com/g/g-6865f21d2a748191a141b30263846518-alma-digna-guardia-do-valor-interior" target="_blank">Alma Digna</a>
+      <a class="ia-button" href="https://chatgpt.com/g/g-6865f19e88f48191a81c5d4ab1b623b5-alma-raiz-guardia-da-dor-silenciosa" target="_blank">Alma Raiz</a>
+      <a class="ia-button" href="https://chatgpt.com/g/g-6865efa1cc6481918dc21b6eeef5f237-alma-aurora-guardia-do-recomeco-interior" target="_blank">Alma Aurora</a>
+    </div>
+
+    <div class="paypal">
+      <div id="paypal-container-AA2DMVSGW5UYW"></div>
+      <div id="paypal-container-UUDGS5Q8QAMBW"></div>
+    </div>
+
+    <script src="https://www.paypal.com/sdk/js?client-id=BAAaVkUxaVBs6tRyAIsC5SzH1jhrwK-GialFVALkLGvy6BVhXUENAbFKPsHsU23Sj2bs_PxNIzZ5IzAYCw&components=hosted-buttons&disable-funding=venmo&currency=BRL"></script>
+    <script>
+      paypal.HostedButtons({ hostedButtonId: "AA2DMVSGW5UYW" }).render("#paypal-container-AA2DMVSGW5UYW")
+      paypal.HostedButtons({ hostedButtonId: "UUDGS5Q8QAMBW" }).render("#paypal-container-UUDGS5Q8QAMBW")
+    </script>
   </div>
-
-  <!-- Botão do PayPal -->
-  <div id="paypal-container"></div>
-  <script src="https://www.paypal.com/sdk/js?client-id=BAaAWXuXkG8hSYk8YRAJSESshh3mjNhr_GiaHYALLVkOy6vbn4NRkUN8bPHssu239sPzbPzkM_wbylGT&currency=BRL"></script>
-  <script>
-    paypal.Buttons({
-      style: {
-        layout: 'horizontal',
-        color: 'gold',
-        shape: 'pill',
-        label: 'pay',
-        height: 40
-      }
-    }).render('#paypal-container');
-  </script>
 </body>
 </html>
