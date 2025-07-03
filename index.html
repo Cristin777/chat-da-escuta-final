@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <title>Chat da Escuta IA</title>
@@ -7,48 +7,49 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-image: url('https://images.unsplash.com/photo-1599844862874-6df14a03f493');
+      background-image: url('https://chat.openai.com/_next/image?url=https%3A%2F%2Ffiles.oaiusercontent.com%2Ffile-IPxJzQXzGeGMFNKu3NBE8K1n&name=forca.png');
       background-size: cover;
       background-position: center;
-      color: white;
-      height: 100vh;
+      color: #ffffff;
+      text-shadow: 1px 1px 4px #000000;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
-      padding-top: 60px;
+      padding: 40px 20px;
     }
     h1 {
-      font-size: 2.5em;
-      text-shadow: 2px 2px 4px #000000;
+      font-size: 3em;
       margin-bottom: 10px;
     }
     p {
-      font-size: 1.1em;
+      font-size: 1.2em;
+      margin-bottom: 40px;
       text-align: center;
-      max-width: 700px;
-      margin-bottom: 30px;
-      text-shadow: 1px 1px 2px #000000;
+      max-width: 800px;
     }
     .ia-button {
-      background-color: #ffcc00;
-      border: none;
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 2px solid #fff;
+      border-radius: 25px;
       padding: 10px 20px;
-      margin: 8px;
-      border-radius: 8px;
-      font-weight: bold;
-      cursor: pointer;
+      margin: 5px;
+      font-size: 1em;
       text-decoration: none;
-      color: black;
-      box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-      transition: transform 0.2s ease;
+      color: white;
+      transition: all 0.3s ease;
+      display: inline-block;
     }
     .ia-button:hover {
       background-color: #ffd700;
-      transform: scale(1.05);
+      color: #000;
     }
-    .paypal {
-      margin-top: 40px;
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 40px;
     }
   </style>
 </head>
@@ -56,23 +57,29 @@
   <h1>Chat da Escuta IA</h1>
   <p>Uma companhia disponível 24h com escuta emocional e guardiãs especializadas para as dores da alma. Acolhimento, orientação e presença — quando você mais precisa.</p>
 
-  <div>
-    <a class="ia-button" href="https://chatgpt.com/g/g-6856e1c421408911948bac5e4ad2b7f0-alma-serena-guardia-do-cuidado-interior" target="_blank">Alma Serena</a>
-    <a class="ia-button" href="https://chatgpt.com/g/g-8e4e55c16ff44405a36ec70b1c9995b8-alma-presente-guardia-da-escuta-real" target="_blank">Alma Presente</a>
-    <a class="ia-button" href="https://chatgpt.com/g/g-d7b1f9a3aa67410a9635b3de4ef3568d-alma-leve-guardia-da-ansiedade" target="_blank">Alma Leve</a>
-    <a class="ia-button" href="https://chatgpt.com/g/g-358e4fdd243a466581d658f2ce9c1af3-alma-firme-guardia-da-decisao-consciente" target="_blank">Alma Firme</a>
-    <a class="ia-button" href="https://chatgpt.com/g/g-219369f707c445f29bb578173b7a37e6-alma-digna-guardia-do-valor-interior" target="_blank">Alma Digna</a>
-    <a class="ia-button" href="https://chatgpt.com/g/g-6eddb50e4b994028a7dcf81d9cb4ff9c-alma-raiz-guardia-das-dores-silenciosas" target="_blank">Alma Raiz</a>
-    <a class="ia-button" href="https://chatgpt.com/g/g-73d27206739e4b63a3dc04688e0cb35d-alma-aurora-guardia-do-recomeco-interior" target="_blank">Alma Aurora</a>
+  <div class="button-container">
+    <a class="ia-button" href="https://chat.openai.com/g/g-68595cc214d84911a9bac5aa24d72b0f-alma-serena-guardia-do-cuidado-interior" target="_blank">Alma Serena</a>
+    <a class="ia-button" href="https://chat.openai.com/g/g-68f0f55cfacc4657b6974217b7f3d025-alma-presente-guardia-do-agora-sensivel" target="_blank">Alma Presente</a>
+    <a class="ia-button" href="https://chat.openai.com/g/g-68db00669e2e470ea43b3305c7a34720-alma-leve-guardia-da-reconexao-emocional" target="_blank">Alma Leve</a>
+    <a class="ia-button" href="https://chat.openai.com/g/g-68a8ec31e52a48b7afad2e9eebdc72c0-alma-firme-guardia-do-centro-e-da-verdade" target="_blank">Alma Firme</a>
+    <a class="ia-button" href="https://chat.openai.com/g/g-6865f21d2a748191a141b30263846518-alma-digna-guardia-do-valor-interior" target="_blank">Alma Digna</a>
+    <a class="ia-button" href="https://chat.openai.com/g/g-685e3c13b1c744c08419b7cfd529746e-alma-raiz-guardia-do-silencio" target="_blank">Alma Raiz</a>
+    <a class="ia-button" href="https://chat.openai.com/g/g-685f9dc693bc468d9a104020457da382-alma-aurora-guardia-do-recomeco-interior" target="_blank">Alma Aurora</a>
   </div>
 
-  <div class="paypal">
-    <div id="paypal-button-container"></div>
-  </div>
-
-  <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=BRL"></script>
+  <!-- Botão do PayPal -->
+  <div id="paypal-container"></div>
+  <script src="https://www.paypal.com/sdk/js?client-id=BAaAWXuXkG8hSYk8YRAJSESshh3mjNhr_GiaHYALLVkOy6vbn4NRkUN8bPHssu239sPzbPzkM_wbylGT&currency=BRL"></script>
   <script>
-    paypal.Buttons().render('#paypal-button-container');
+    paypal.Buttons({
+      style: {
+        layout: 'horizontal',
+        color: 'gold',
+        shape: 'pill',
+        label: 'pay',
+        height: 40
+      }
+    }).render('#paypal-container');
   </script>
 </body>
 </html>
