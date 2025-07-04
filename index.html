@@ -1,83 +1,92 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Chat da Escuta IA</title>
   <style>
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Georgia', serif;
-      background-image: url('https://i.ibb.co/bKPq8hv/sword-light-final.jpg');
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url('https://chatdaescuta.nyc3.cdn.digitaloceanspaces.com/espada-luz.jpg');
       background-size: cover;
       background-position: center;
-      color: white;
+      background-repeat: no-repeat;
+      background-color: #000;
+      color: #fff;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
     }
+
     .overlay {
       background-color: rgba(0, 0, 0, 0.7);
       padding: 40px 20px;
-      min-height: 100vh;
+      border-radius: 16px;
+      max-width: 800px;
     }
+
     h1 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
+      font-size: 2em;
+      margin-bottom: 30px;
+      font-weight: bold;
     }
-    .button-container {
+
+    .btn-container {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 15px;
-      margin: 30px 0;
+      gap: 12px;
+      margin-bottom: 30px;
     }
-    .ai-button, .pay-button {
-      background-color: #ffd700;
-      color: black;
-      padding: 14px 26px;
-      border: none;
-      border-radius: 10px;
+
+    .btn {
+      background-color: #ffeb3b;
+      color: #000;
+      padding: 12px 24px;
       font-size: 1em;
       font-weight: bold;
+      border: none;
+      border-radius: 10px;
       cursor: pointer;
       text-decoration: none;
-      transition: all 0.3s ease;
+      transition: 0.3s;
     }
-    .ai-button:hover, .pay-button:hover {
+
+    .btn:hover {
       background-color: #fff;
-      color: #000;
     }
-    footer {
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #ccc;
+
+    p {
+      margin-top: 10px;
+      font-size: 0.95em;
+      opacity: 0.9;
     }
   </style>
 </head>
 <body>
   <div class="overlay">
     <h1>ESCOLHA SUA GUARDIÃ</h1>
-
-    <div class="button-container">
-      <a class="ai-button" href="https://chat.openai.com/g/g-wfme93Yq5-terapeuta-alem-fronteiras" target="_blank">Terapeuta Além-Fronteiras</a>
-      <a class="ai-button" href="https://chat.openai.com/g/g-vCBZfAjqd-anima-renascens" target="_blank">Anima Renascens</a>
-      <a class="ai-button" href="https://chat.openai.com/g/g-2hAzZy0u8-vitria-inteligencia-funcional" target="_blank">Vítria</a>
-      <a class="ai-button" href="https://chat.openai.com/g/g-13f0azMrS-bioterapeuta-alem-fronteiras" target="_blank">Bioterapeuta</a>
-      <a class="ai-button" href="https://chat.openai.com/g/g-6865f21d2a748191a141b30263846518-alma-digna-guardia-do-valor-interior" target="_blank">Alma Digna</a>
-      <a class="ai-button" href="https://chat.openai.com/g/g-8V8BLpy9y-normativa360nr1" target="_blank">Normativa 360 NR1</a>
-      <a class="ai-button" href="https://chat.openai.com/g/g-34UKkIUmK-vita-escuta-normativa-24h" target="_blank">Vita Escuta 24h</a>
+    <div class="btn-container">
+      <a class="btn" href="https://chat.openai.com/g/g-189y9DJ5z-terapeuta-alem-fronteiras" target="_blank">Terapeuta Além-Fronteiras</a>
+      <a class="btn" href="https://chat.openai.com/g/g-AU21msm9N-anima-renascens" target="_blank">Anima Renascens</a>
+      <a class="btn" href="https://chat.openai.com/g/g-686f21d2a748191a141b30263846518-alma-digna-guardia-do-valor-interior" target="_blank">Alma Digna</a>
+      <a class="btn" href="https://chat.openai.com/g/g-mqL5CrE2O-vitria" target="_blank">VÍTRIA</a>
+      <a class="btn" href="https://chat.openai.com/g/g-p5nDkx4XL-bioterapeuta-alem-fronteiras" target="_blank">Bioterapeuta</a>
+      <a class="btn" href="https://chat.openai.com/g/g-bcLG6zENw-normativa360nr1" target="_blank">Normativa 360 NR1</a>
+      <a class="btn" href="https://chat.openai.com/g/g-z0Q4P4k1N-vita-escuta-normativa-24h" target="_blank">Vita Escuta 24h</a>
     </div>
-
-    <h2>Contribua com a sala de escuta</h2>
-    <div class="button-container">
-      <a class="pay-button" href="https://www.paypal.com/paypalme/mariacristinarocha/30" target="_blank">R$30 Atendimento Único</a>
-      <a class="pay-button" href="https://www.paypal.com/paypalme/mariacristinarocha/180" target="_blank">R$180 Plano Mensal</a>
+    <h3>Contribua com a sala de escuta</h3>
+    <div class="btn-container">
+      <a class="btn" href="https://mpago.la/1B5cvRY" target="_blank">R$50 Atendimento Único</a>
+      <a class="btn" href="https://mpago.la/1DFShuP" target="_blank">R$150 Plano Mensal</a>
     </div>
-
-    <footer>
-      Projeto criado por Maria Cristina Rocha Garcia com apoio técnico.<br />
-      Chat da Escuta IA – Todas as guardiãs são protegidas por ética e ciência.
-    </footer>
+    <p>Projeto criado por Maria Cristina Rocha Garcia com apoio técnico. <br>
+    Chat da Escuta IA – Todas as guardiãs são protegidas por filtros éticos e blindadas contra abuso.</p>
   </div>
 </body>
 </html>
