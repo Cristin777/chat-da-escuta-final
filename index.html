@@ -7,103 +7,77 @@
   <style>
     body {
       margin: 0;
+      padding: 0;
       font-family: 'Georgia', serif;
-      background-color: #000;
-      color: #ffffff;
-      text-shadow: 1px 1px 3px #000000;
-    }
-    .hero {
-      width: 100%;
-      height: 100vh;
-      background: url('https://i.ibb.co/HzgN26V/espada-clara.png') no-repeat center center;
+      background-image: url('https://i.ibb.co/bKPq8hv/sword-light-final.jpg');
       background-size: cover;
-    }
-    @media (max-width: 768px) {
-      .hero {
-        height: 60vh;
-        background-position: top center;
-      }
-    }
-    .content {
-      background-color: rgba(0, 0, 0, 0.88);
-      padding: 40px 20px 80px 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    h2 {
-      font-size: 2em;
-      margin-bottom: 20px;
+      background-position: center;
+      color: white;
       text-align: center;
-      font-family: 'Georgia', serif;
-      font-weight: 500;
     }
-    .button-grid {
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    .button-container {
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
       justify-content: center;
-      margin-bottom: 40px;
+      gap: 15px;
+      margin: 30px 0;
     }
-    .ia-button {
-      background-color: rgba(255, 255, 255, 0.92);
-      color: #000;
+    .ai-button, .pay-button {
+      background-color: #ffd700;
+      color: black;
+      padding: 14px 26px;
       border: none;
-      padding: 12px 18px;
-      border-radius: 12px;
+      border-radius: 10px;
       font-size: 1em;
-      text-decoration: none;
-      font-weight: bold;
-      transition: all 0.3s ease;
-      font-family: 'Georgia', serif;
-    }
-    .ia-button:hover {
-      background-color: #ffd700;
-      color: #000;
-      transform: scale(1.05);
-    }
-    .pay-button {
-      background-color: #ffd700;
-      color: #000;
-      padding: 14px 28px;
-      border: none;
-      border-radius: 14px;
-      font-size: 1.1em;
       font-weight: bold;
       cursor: pointer;
       text-decoration: none;
       transition: all 0.3s ease;
-      margin-bottom: 16px;
-      font-family: 'Georgia', serif;
     }
-    .pay-button:hover {
+    .ai-button:hover, .pay-button:hover {
       background-color: #fff;
       color: #000;
     }
-    .small-note {
-      font-size: 1em;
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
       color: #ccc;
-      margin-bottom: 30px;
-      text-align: center;
     }
   </style>
 </head>
 <body>
-  <div class="hero"></div>
-  <div class="content">
-    <h2>Você nunca está só. Escolha sua guardiã e seja escutado com acolhimento e presença.</h2>
-    <div class="button-grid">
-      <a class="ia-button" href="https://chatgpt.com/g/g-6865ec1426488191a4bac5cad42bf9f0-alma-serena-guardia-do-cuidado-interior" target="_blank">Alma Serena</a>
-      <a class="ia-button" href="https://chatgpt.com/g/g-6866134c8bb8819195197e2e1e416c6d-alma-presente-guardia-da-presenca-emocional" target="_blank">Alma Presente</a>
-      <a class="ia-button" href="https://chatgpt.com/g/g-68660e36e53081918a0e5023360366c1-alma-leve-guardia-do-alivio-mental" target="_blank">Alma Leve</a>
-      <a class="ia-button" href="https://chatgpt.com/g/g-68660e2088d881918c07022c1cb43c51-alma-firme-guardia-da-calma" target="_blank">Alma Firme</a>
-      <a class="ia-button" href="https://chatgpt.com/g/g-6865f21d2a748191a141b30263846518-alma-digna-guardia-do-valor-interior" target="_blank">Alma Digna</a>
-      <a class="ia-button" href="https://chatgpt.com/g/g-6865f19e88f48191a81c5d4ab1b623b5-alma-raiz-guardia-da-dor-silenciosa" target="_blank">Alma Raiz</a>
-      <a class="ia-button" href="https://chatgpt.com/g/g-6865efa1cc6481918dc21b6eeef5f237-alma-aurora-guardia-do-recomeco-interior" target="_blank">Alma Aurora</a>
+  <div class="overlay">
+    <h1>ESCOLHA SUA GUARDIÃ</h1>
+
+    <div class="button-container">
+      <a class="ai-button" href="https://chat.openai.com/g/g-wfme93Yq5-terapeuta-alem-fronteiras" target="_blank">Terapeuta Além-Fronteiras</a>
+      <a class="ai-button" href="https://chat.openai.com/g/g-vCBZfAjqd-anima-renascens" target="_blank">Anima Renascens</a>
+      <a class="ai-button" href="https://chat.openai.com/g/g-2hAzZy0u8-vitria-inteligencia-funcional" target="_blank">Vítria</a>
+      <a class="ai-button" href="https://chat.openai.com/g/g-13f0azMrS-bioterapeuta-alem-fronteiras" target="_blank">Bioterapeuta</a>
+      <a class="ai-button" href="https://chat.openai.com/g/g-6865f21d2a748191a141b30263846518-alma-digna-guardia-do-valor-interior" target="_blank">Alma Digna</a>
+      <a class="ai-button" href="https://chat.openai.com/g/g-8V8BLpy9y-normativa360nr1" target="_blank">Normativa 360 NR1</a>
+      <a class="ai-button" href="https://chat.openai.com/g/g-34UKkIUmK-vita-escuta-normativa-24h" target="_blank">Vita Escuta 24h</a>
     </div>
-    <a class="pay-button" href="https://www.paypal.com/checkoutnow?hostedbutton_id=UUDGS5Q8QAMBW" target="_blank">Desabafar com uma Guardiã – R$180</a>
-    <a class="pay-button" href="https://www.paypal.com/checkoutnow?hostedbutton_id=AA2DMVSGW5UYW" target="_blank">Atendimento único – R$30</a>
-    <div class="small-note">Acolhimento por 1 hora com escuta ativa e respeitosa.</div>
+
+    <h2>Contribua com a sala de escuta</h2>
+    <div class="button-container">
+      <a class="pay-button" href="https://www.paypal.com/paypalme/mariacristinarocha/30" target="_blank">R$30 Atendimento Único</a>
+      <a class="pay-button" href="https://www.paypal.com/paypalme/mariacristinarocha/180" target="_blank">R$180 Plano Mensal</a>
+    </div>
+
+    <footer>
+      Projeto criado por Maria Cristina Rocha Garcia com apoio técnico.<br />
+      Chat da Escuta IA – Todas as guardiãs são protegidas por ética e ciência.
+    </footer>
   </div>
 </body>
 </html>
