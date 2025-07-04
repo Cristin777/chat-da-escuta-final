@@ -70,17 +70,18 @@
       cursor: pointer;
       text-decoration: none;
       transition: all 0.3s ease;
-      margin-bottom: 20px;
+      margin: 10px;
+      display: inline-block;
     }
     .pay-button:hover {
       background-color: #fff;
       color: #000;
     }
-    .small-note {
-      font-size: 1em;
-      color: #ccc;
+    .pay-button-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       margin-bottom: 40px;
-      text-align: center;
     }
   </style>
 </head>
@@ -97,8 +98,11 @@
       <a class="ia-button" href="https://chatgpt.com/g/g-6865f19e88f48191a81c5d4ab1b623b5-alma-raiz-guardia-da-dor-silenciosa" target="_blank">Alma Raiz</a>
       <a class="ia-button" href="https://chatgpt.com/g/g-6865efa1cc6481918dc21b6eeef5f237-alma-aurora-guardia-do-recomeco-interior" target="_blank">Alma Aurora</a>
     </div>
-    <a class="pay-button" href="https://www.paypal.com/checkoutnow?hostedbutton_id=UUDGS5Q8QAMBW" target="_blank">Desabafar com uma Guardiã – R$180</a>
-    <div class="small-note">Atendimento por 1 hora — valor promocional: R$30,00</div>
+
+    <div class="pay-button-group">
+      <a class="pay-button" href="https://www.paypal.com/checkoutnow?hostedbutton_id=AA2DMVSGW5UYW" target="_blank">Desabafar por 1 hora – R$30</a>
+      <a class="pay-button" href="https://www.paypal.com/checkoutnow?hostedbutton_id=UUDGS5Q8QAMBW" target="_blank">Plano Mensal Guardiã – R$180</a>
+    </div>
   </div>
 </body>
 </html>
