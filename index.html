@@ -8,85 +8,77 @@
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Segoe UI', sans-serif;
       background-image: url('https://chatdaescuta.nyc3.cdn.digitaloceanspaces.com/espada-luz.jpg');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       background-color: #000;
-      color: #fff;
+      font-family: 'Verdana', sans-serif;
+      color: white;
       text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
     }
 
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 40px 20px;
-      border-radius: 16px;
-      max-width: 800px;
-    }
-
-    h1 {
-      font-size: 2em;
-      margin-bottom: 30px;
+    .title {
+      font-size: 32px;
       font-weight: bold;
+      margin-top: 40px;
+      text-shadow: 2px 2px 4px #000;
     }
 
-    .btn-container {
+    .button-container {
+      margin: 30px auto 20px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 12px;
-      margin-bottom: 30px;
+      max-width: 800px;
     }
 
-    .btn {
-      background-color: #ffeb3b;
-      color: #000;
-      padding: 12px 24px;
-      font-size: 1em;
+    .pay-button {
+      background-color: #FFD700;
+      color: black;
       font-weight: bold;
       border: none;
-      border-radius: 10px;
+      border-radius: 12px;
+      padding: 10px 20px;
+      font-size: 14px;
       cursor: pointer;
       text-decoration: none;
-      transition: 0.3s;
+      box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
     }
 
-    .btn:hover {
-      background-color: #fff;
-    }
-
-    p {
-      margin-top: 10px;
-      font-size: 0.95em;
-      opacity: 0.9;
+    .footer {
+      margin-top: 40px;
+      font-size: 12px;
+      color: #ddd;
+      text-shadow: 1px 1px 2px #000;
+      padding: 10px;
     }
   </style>
 </head>
 <body>
-  <div class="overlay">
-    <h1>ESCOLHA SUA GUARDIÃ</h1>
-    <div class="btn-container">
-      <a class="btn" href="https://chat.openai.com/g/g-189y9DJ5z-terapeuta-alem-fronteiras" target="_blank">Terapeuta Além-Fronteiras</a>
-      <a class="btn" href="https://chat.openai.com/g/g-AU21msm9N-anima-renascens" target="_blank">Anima Renascens</a>
-      <a class="btn" href="https://chat.openai.com/g/g-686f21d2a748191a141b30263846518-alma-digna-guardia-do-valor-interior" target="_blank">Alma Digna</a>
-      <a class="btn" href="https://chat.openai.com/g/g-mqL5CrE2O-vitria" target="_blank">VÍTRIA</a>
-      <a class="btn" href="https://chat.openai.com/g/g-p5nDkx4XL-bioterapeuta-alem-fronteiras" target="_blank">Bioterapeuta</a>
-      <a class="btn" href="https://chat.openai.com/g/g-bcLG6zENw-normativa360nr1" target="_blank">Normativa 360 NR1</a>
-      <a class="btn" href="https://chat.openai.com/g/g-z0Q4P4k1N-vita-escuta-normativa-24h" target="_blank">Vita Escuta 24h</a>
-    </div>
-    <h3>Contribua com a sala de escuta</h3>
-    <div class="btn-container">
-      <a class="btn" href="https://mpago.la/1B5cvRY" target="_blank">R$50 Atendimento Único</a>
-      <a class="btn" href="https://mpago.la/1DFShuP" target="_blank">R$150 Plano Mensal</a>
-    </div>
-    <p>Projeto criado por Maria Cristina Rocha Garcia com apoio técnico. <br>
-    Chat da Escuta IA – Todas as guardiãs são protegidas por filtros éticos e blindadas contra abuso.</p>
+  <div class="title">ESCOLHA SUA GUARDIÃ</div>
+
+  <div class="button-container">
+    <a class="pay-button" href="https://chat.openai.com/g/g-7QYuXHzRk-terapeuta-alem-fronteiras" target="_blank">Terapeuta Além-Fronteiras</a>
+    <a class="pay-button" href="https://chat.openai.com/g/g-a6z2sU8oG-anima-renascens" target="_blank">Anima Renascens</a>
+    <a class="pay-button" href="https://chat.openai.com/g/g-6865f21d2a748191a141b30263846518-alma-digna-guardia-do-valor-interior" target="_blank">Alma Digna</a>
+    <a class="pay-button" href="https://chat.openai.com/g/g-DfL1tRZfo-vitria-inteligencia-integrativa" target="_blank">VITRIA</a>
+    <a class="pay-button" href="https://chat.openai.com/g/g-lfDLDz6RZ-bioterapeuta-alem-fronteiras" target="_blank">Bioterapeuta</a>
+    <a class="pay-button" href="https://chat.openai.com/g/g-TXCTRA1rP-normativa-360-nr1" target="_blank">Normativa 360 NR1</a>
+    <a class="pay-button" href="https://chat.openai.com/g/g-CzbxVBB4G-vita-escuta-24h" target="_blank">Vita Escuta 24h</a>
+  </div>
+
+  <div class="title" style="font-size: 20px;">Contribua com a sala de escuta</div>
+
+  <div class="button-container">
+    <a class="pay-button" href="https://www.paypal.com/paypalme/chatdaescuta/50" target="_blank">R$50 Atendimento Único</a>
+    <a class="pay-button" href="https://www.paypal.com/paypalme/chatdaescuta/150" target="_blank">R$150 Plano Mensal</a>
+  </div>
+
+  <div class="footer">
+    Projeto criado por Maria Cristina Rocha Garcia com apoio técnico.<br/>
+    Chat da Escuta IA — Todas as guardiãs são protegidas por filtros éticos e blindadas contra abuso.
   </div>
 </body>
 </html>
