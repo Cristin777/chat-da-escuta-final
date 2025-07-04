@@ -7,15 +7,15 @@
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Georgia', serif;
       background-color: #000;
       color: #ffffff;
-      text-shadow: 1px 1px 4px #000000;
+      text-shadow: 1px 1px 3px #000000;
     }
     .hero {
       width: 100%;
       height: 100vh;
-      background: url('https://i.ibb.co/s9YVv8xj/forca.png') no-repeat center center;
+      background: url('https://i.ibb.co/HzgN26V/espada-clara.png') no-repeat center center;
       background-size: cover;
     }
     @media (max-width: 768px) {
@@ -25,7 +25,7 @@
       }
     }
     .content {
-      background-color: rgba(0, 0, 0, 0.85);
+      background-color: rgba(0, 0, 0, 0.88);
       padding: 40px 20px 80px 20px;
       display: flex;
       flex-direction: column;
@@ -35,6 +35,8 @@
       font-size: 2em;
       margin-bottom: 20px;
       text-align: center;
+      font-family: 'Georgia', serif;
+      font-weight: 500;
     }
     .button-grid {
       display: flex;
@@ -44,15 +46,16 @@
       margin-bottom: 40px;
     }
     .ia-button {
-      background-color: rgba(255, 255, 255, 0.9);
-      color: #333;
+      background-color: rgba(255, 255, 255, 0.92);
+      color: #000;
       border: none;
-      padding: 10px 18px;
+      padding: 12px 18px;
       border-radius: 12px;
       font-size: 1em;
       text-decoration: none;
       font-weight: bold;
       transition: all 0.3s ease;
+      font-family: 'Georgia', serif;
     }
     .ia-button:hover {
       background-color: #ffd700;
@@ -70,18 +73,18 @@
       cursor: pointer;
       text-decoration: none;
       transition: all 0.3s ease;
-      margin: 10px;
-      display: inline-block;
+      margin-bottom: 16px;
+      font-family: 'Georgia', serif;
     }
     .pay-button:hover {
       background-color: #fff;
       color: #000;
     }
-    .pay-button-group {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 40px;
+    .small-note {
+      font-size: 1em;
+      color: #ccc;
+      margin-bottom: 30px;
+      text-align: center;
     }
   </style>
 </head>
@@ -98,11 +101,9 @@
       <a class="ia-button" href="https://chatgpt.com/g/g-6865f19e88f48191a81c5d4ab1b623b5-alma-raiz-guardia-da-dor-silenciosa" target="_blank">Alma Raiz</a>
       <a class="ia-button" href="https://chatgpt.com/g/g-6865efa1cc6481918dc21b6eeef5f237-alma-aurora-guardia-do-recomeco-interior" target="_blank">Alma Aurora</a>
     </div>
-
-    <div class="pay-button-group">
-      <a class="pay-button" href="https://www.paypal.com/checkoutnow?hostedbutton_id=AA2DMVSGW5UYW" target="_blank">Desabafar por 1 hora – R$30</a>
-      <a class="pay-button" href="https://www.paypal.com/checkoutnow?hostedbutton_id=UUDGS5Q8QAMBW" target="_blank">Plano Mensal Guardiã – R$180</a>
-    </div>
+    <a class="pay-button" href="https://www.paypal.com/checkoutnow?hostedbutton_id=UUDGS5Q8QAMBW" target="_blank">Desabafar com uma Guardiã – R$180</a>
+    <a class="pay-button" href="https://www.paypal.com/checkoutnow?hostedbutton_id=AA2DMVSGW5UYW" target="_blank">Atendimento único – R$30</a>
+    <div class="small-note">Acolhimento por 1 hora com escuta ativa e respeitosa.</div>
   </div>
 </body>
 </html>
