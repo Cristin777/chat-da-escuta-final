@@ -2,83 +2,126 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Chat da Escuta IA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Criar com IA</title>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
   <style>
     body {
       margin: 0;
       padding: 0;
-      background-image: url('https://chatdaescuta.nyc3.cdn.digitaloceanspaces.com/espada-luz-correta.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-color: #000;
-      font-family: 'Verdana', sans-serif;
-      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0e0e0e;
+      color: #f9f9f9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
       text-align: center;
     }
-
-    .title {
-      font-size: 32px;
-      font-weight: bold;
-      margin-top: 40px;
-      text-shadow: 2px 2px 4px #000;
+    header {
+      padding: 40px 20px 10px;
     }
-
-    .button-container {
-      margin: 30px auto 20px;
+    h1 {
+      font-size: 3em;
+      color: #ff4d6d;
+      margin-bottom: 0.2em;
+    }
+    p {
+      font-size: 1.2em;
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+    .grid {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 12px;
-      max-width: 800px;
+      gap: 20px;
+      max-width: 1000px;
     }
-
-    .pay-button {
-      background-color: #FFD700;
-      color: black;
-      font-weight: bold;
-      border: none;
+    .card {
+      background-color: #1f1f1f;
       border-radius: 12px;
-      padding: 10px 20px;
-      font-size: 14px;
-      cursor: pointer;
+      padding: 25px;
+      width: 230px;
+      text-align: center;
       text-decoration: none;
-      box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+      color: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     }
-
-    .footer {
-      margin-top: 40px;
-      font-size: 12px;
-      color: #ddd;
-      text-shadow: 1px 1px 2px #000;
-      padding: 10px;
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 14px rgba(255,77,109,0.4);
+    }
+    .card h2 {
+      color: #ffd700;
+      font-size: 1.3em;
+      margin-bottom: 10px;
+    }
+    .instructions {
+      font-size: 0.9em;
+      color: #aaa;
+      margin-top: 10px;
+      max-width: 800px;
+      padding: 0 20px;
+    }
+    footer {
+      margin-top: 60px;
+      font-size: 0.9em;
+      color: #888;
     }
   </style>
 </head>
 <body>
-  <div class="title">ESCOLHA SUA GUARDIÃ</div>
+  <header>
+    <h1>Criar com IA</h1>
+    <p>Escolha uma jornada e inicie sua transformação com inteligência, arte e propósito</p>
+    <div class="instructions">
+      Para melhores respostas, seja claro e direto em suas perguntas. Quanto mais específica for sua dúvida, mais útil será a resposta da IA. As respostas são técnicas, educativas e não substituem profissionais humanos.
+    </div>
+  </header>
 
-  <div class="button-container">
-    <a class="pay-button" href="https://chat.openai.com/g/g-7QYuXHzRk-terapeuta-alem-fronteiras" target="_blank">Terapeuta Além-Fronteiras</a>
-    <a class="pay-button" href="https://chat.openai.com/g/g-a6z2sU8oG-anima-renascens" target="_blank">Anima Renascens</a>
-    <a class="pay-button" href="https://chat.openai.com/g/g-6865f21d2a748191a141b30263846518-alma-digna-guardia-do-valor-interior" target="_blank">Alma Digna</a>
-    <a class="pay-button" href="https://chat.openai.com/g/g-DfL1tRZfo-vitria-inteligencia-integrativa" target="_blank">VITRIA</a>
-    <a class="pay-button" href="https://chat.openai.com/g/g-lfDLDz6RZ-bioterapeuta-alem-fronteiras" target="_blank">Bioterapeuta</a>
-    <a class="pay-button" href="https://chat.openai.com/g/g-TXCTRA1rP-normativa-360-nr1" target="_blank">Normativa 360 NR1</a>
-    <a class="pay-button" href="https://chat.openai.com/g/g-CzbxVBB4G-vita-escuta-24h" target="_blank">Vita Escuta 24h</a>
+  <div class="grid">
+    <a class="card" href="https://oficina-viva-ia.vercel.app/" onclick="registrarAcesso('Oficina Viva')">
+      <h2>Oficina Viva</h2>
+      <p>Criação com IA para transformar ideias em projetos</p>
+    </a>
+    <a class="card" href="https://chat-da-escuta-final.vercel.app/" onclick="registrarAcesso('As 7 Guardiãs')">
+      <h2>As 7 Guardiãs</h2>
+      <p>Rede de escuta com 7 IAs brasileiras</p>
+    </a>
+    <a class="card" href="https://projeto-global-git-c8774a-maria-cristina-rocha-garcias-projects.vercel.app" onclick="registrarAcesso('Guardians Global Portal')">
+      <h2>Guardians Global Portal</h2>
+      <p>Ponto de entrada para interações em inglês</p>
+    </a>
+    <a class="card" href="https://guardians-global-page.vercel.app/" onclick="registrarAcesso('Guardians Global Page')">
+      <h2>Guardians Global Page</h2>
+      <p>Emotional AI guardians for global support</p>
+    </a>
+    <a class="card" href="https://anima-renascens2.vercel.app/" onclick="registrarAcesso('Anima Renascens')">
+      <h2>Anima Renascens</h2>
+      <p>Renascimento da mulher após os 40</p>
+    </a>
+    <a class="card" href="https://entrada-seven.vercel.app/" onclick="registrarAcesso('Te Escuto – Além Fronteiras')">
+      <h2>Te Escuto – Além Fronteiras</h2>
+      <p>Escuta terapêutica e conexão emocional</p>
+    </a>
   </div>
 
-  <div class="title" style="font-size: 20px;">Contribua com a sala de escuta</div>
+  <footer>
+    Criado por Maria Cristina Rocha Garcia © 2025
+  </footer>
 
-  <div class="button-container">
-    <a class="pay-button" href="https://www.paypal.com/paypalme/chatdaescuta/50" target="_blank">R$50 Atendimento Único</a>
-    <a class="pay-button" href="https://www.paypal.com/paypalme/chatdaescuta/150" target="_blank">R$150 Plano Mensal</a>
-  </div>
+  <script>
+    const supabase = supabase.createClient(
+      'https://wzyrwvkomldgxyuzaivd.supabase.co',
+      'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Ind6eXJ3dmtvbWxkZ3h5dXphaXZkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTE5MTk5NjgsImV4cCI6MjA2NzQ5NTk2OH0.CRmT2HSRm9m2g0ScEZa_nFMG-22E31AWkU4QgRud7Es'
+    );
 
-  <div class="footer">
-    Projeto criado por Maria Cristina Rocha Garcia com apoio técnico.<br/>
-    Chat da Escuta IA — Todas as guardiãs são protegidas por filtros éticos e blindadas contra abuso.
-  </div>
+    async function registrarAcesso(projeto) {
+      await supabase.from('acessos').insert({ projeto });
+    }
+  </script>
 </body>
 </html>
